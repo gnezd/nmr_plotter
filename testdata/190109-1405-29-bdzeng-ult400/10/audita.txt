@@ -1,0 +1,27 @@
+##TITLE= Audit trail, TopSpin 3.6.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= locnmr
+$$ /mnt/smb/nas21/bode/bdzeng/190109-1405-29-bdzeng-ult400/10/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2019-01-09 14:20:59.372 +0100>,<locnmr>,<oanmr2oc>,<go4>,<TopSpin 3.6.0>,
+      <created by zg
+	started at 2019-01-09 14:10:02.161 +0100,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       8B 2F 2A 7F 94 8A B6 E4 16 4C 0E F8 C4 9B E2 82
+       data hash MD5: 55968
+       53 43 19 A4 DA 42 C4 CA 88 FF 4A 1F 3D 7D 53 2A>)
+(   2,<2019-01-09 14:20:59.405 +0100>,<locnmr>,<oanmr2oc>,<audit>,<TopSpin 3.6.0>,
+      <user comment:
+       ICON-NMR User ID: bdzeng
+       data hash MD5: 55968
+       53 43 19 A4 DA 42 C4 CA 88 FF 4A 1F 3D 7D 53 2A>)
+(   3,<2019-01-09 14:20:59.550 +0100>,<locnmr>,<oanmr2oc>,<dirdata>,<TopSpin 3.6.0>,
+      <wrpa from 1 10 "190109-1405-29-bdzeng-ult400" "/opt/v/bdzeng"
+       data hash MD5: 55968
+       53 43 19 A4 DA 42 C4 CA 88 FF 4A 1F 3D 7D 53 2A>)
+##END=
+
+$$ hash MD5
+$$ 40 99 03 86 7C C7 8E D8 88 84 64 A3 A4 BD 60 07

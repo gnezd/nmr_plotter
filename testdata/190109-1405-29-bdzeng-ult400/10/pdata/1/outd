@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 3.6.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= locnmr
+$$ 2019-01-09 14:20:59.557 +0100  locnmr@oanmr2oc
+$$ /mnt/smb/nas21/bode/bdzeng/190109-1405-29-bdzeng-ult400/10/pdata/1/outd
+$$ process /opt/topspin3.6.0/prog/mod/dirdata
+##$CURPLOT= <gemp2oc>
+##$CURPRIN= <$gemp2oc>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/1D_H-ETH.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

@@ -1,0 +1,110 @@
+CONFIGURATION INFORMATION
+=========================
+
+Path         : /opt/topspin3.6.0/conf/instr/spect/uxnmr.info
+Date         : Wed Sep 19 10:20:28 2018
+Release      : TopSpin 3.6.0
+Installed in : /opt/topspin3.6.0
+Host         : oanmr2oc
+OS           : CentOS Linux release 7.5.1804 (Core) 
+CPU          : Intel(R) Xeon(R) CPU E5-1620 v4 @ 3.50GHz (8 cores at 1293 MHz with Hyperthreading)
+User         : locnmr (Open Access User)
+System       : Avance III 400 NMR spectrometer
+1H-frequency : 400.13 MHz
+Description  : Avance III
+Location     : HDI D 326
+Bruker Order : ZH090807
+Configured in: oanmr2oc:/opt/topspin3.6.0/conf/instr/spect
+
+IPSO: connected to spectrometer subnet
+- TCP/IP address = 149.236.99.90
+ - IPSO type: AQS
+- Tctrl : 1
+- Fctrls: 2
+- Gctrl1: without digital preemphasis
+- Rctrl : 1
+- FREDs : none
+- DPP : none
+
+DRU1: AQS DRU Z100977/00794 ECL 04.00
+- TCP/IP address = 149.236.99.89
+- Firmware Version = 170619
+- DRU1 controls AQS-Rack and HPPR/2
+
+AQS: connected to 149.236.99.89:/dev/tty10
+  _Slot_ SBSB _____________________Board_____________________
+  Number Addr Type HW-VS FW-VS ID  ECL Name   Description
+  -----------------------------------------------------------
+     2   0x10 0x72   0x4    AW  R  4.3 REC-1  AQS RXAD400 Z102116/1034 ECL 04.03
+     3   0x34  0x2   0x1        X  5.0 REF-1  REF-400 Reference Board for AQS Receiver
+     4   0x24 0x11   0x8    AE  S  2.2 SGU-1  AQS SGU/2 400 Z103080/00840 ECL 02.02 FPGA-Vs=AF
+     5   0x25 0x11   0x8    AE  S  2.2 SGU-2  AQS SGU/2 400 Z103080/00839 ECL 02.02 FPGA-Vs=AF
+     9   0x36  0x5     0        A  7.0 BLA-1  BLA2BB 150/60 20-400 W1345049/2032 ECL 7
+    21   0x21 0xcf     0        P  1.0 PSD-1  PSD/3 Power Supply Distribution Board
+    --   0x20 0xd1     0        B  2.3 MASTER AQS/3 Chassis
+     1   0x20  0x7     0        B      MASTER AQS Rack Master
+  Logical Receiver/SGU configuration:
+
+
+Router: 1 AQS-Minirouter
+
+Amplifiers (AQS configuration):
+  RO  Amplifier  Module  Nucleus  Power/W  Switchbox Name PN/SN/FW
+   1      1         1        B      150    N         BLA2BB 150/60 20-400 W1345049/2032/-
+   2      1         2        B       60    N         BLA2BB 150/60 20-400 W1345049/2032/-
+   3      2         1       2H       20    N         2HTX in BSMS -/-/-
+
+
+BSMS: BSMS/2 connected to ethernet
+- TCP/IP address = 149.236.99.20
+- ELCB firmware version = 20170712
+- GAB current limits = 0.0/X, 0.0/Y, 10.0/Z (in A)
+- SCB channels = 20
+- Shim System = BOSS1-SB
+- 2HTX Amplifier: available
+- Lock: installed
+
+Bruker Automatic Changer: device connected to 149.236.99.90:/dev/tty04
+- Capacity: 60 holders
+- Firmware: 20040805
+- use BACS air  = yes
+- BACS sx delay = 10 s
+- Sample Rail fast changer mode = no
+
+Eurotherm VTU: device connected to 149.236.99.90:/dev/tty05
+
+Preamplifiers :
+HPPR2: - HPPR/2 preamplifier connected to 149.236.99.89:/dev/tty10
+    Type      : HPPR/2
+    Controller: Cover/1 with Application firmware = AQ
+                15 LEDs for tuning, 15 LEDs for matching
+    Module  1 : 1H/2H 1H (virtual 50 Ohm reference: 290.8%/89.2deg)
+                PN=Z003959, SN=00522 from 20080114
+    Module  2 : 1H/2H 2H (virtual 50 Ohm reference: 97.8%/-75.1deg)
+                PN=Z003959, SN=00522 from 20080114
+    Module  3 : XBB19F 2HS
+                PN=Z003504, SN=00517 from 20080123
+
+
+
+Gradient Controller cable connections
+--------------------------------------------------------------------
+GCtrl1: connected to GAB in BSMS
+
+RF cable connections (assumed)
+--------------------------------------------------------------------
+SGU1 NORM output -> input 2 of transmitter 1 (BLA2BB 150/60 20-400 W1345049/2032)
+SGU1 AUX  output -> input 1 of transmitter 2 (2HTX in BSMS)
+SGU2 NORM output -> input 3 of transmitter 1 (BLA2BB 150/60 20-400 W1345049/2032)
+SGU2 AUX  output -> TUNE signal input of HPPR
+
+Blanking cable connections (assumed)
+--------------------------------------------------------------------
+transmitter 1 = BLA2BB 150/60 20-400 W1345049/2032:
+- amplifier B-150W uses blanking 1
+- amplifier B-60W uses blanking 2
+
+transmitter 2 = 2HTX in BSMS:
+- amplifier 2H-20W uses blanking 3
+
+
