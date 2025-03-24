@@ -1,5 +1,11 @@
 # Obj: enable interactive tuning of apodization, shift/zero-filling, and transformation parameters
 require 'tk'
+
+# Stolen from spect_toolkit with modification: no more temprorary gplot files by default
+class RbTkCanvas
+
+end
+
 class SpectTuner
   def initialize(tkroot)
     @param_panel = TkFrame.new(tkroot) {grid('row': 0, 'column': 0, 'sticky': 'nsew', rowspan: 2)}
